@@ -18,7 +18,7 @@ class App
         console.log("autheur");
         console.log("copyright");
         console.log("distributeur");
-        
+        console.log("darkmode");
     }
 }
 
