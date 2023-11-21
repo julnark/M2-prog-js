@@ -12,13 +12,13 @@ class App
         let distributeur = "Google";
         let darkmode = "false";
 
-        console.log("appNaam");
-        console.log("versienummer");
-        console.log("versiedatum");
-        console.log("autheur");
-        console.log("copyright");
-        console.log("distributeur");
-        console.log("darkmode");
+        console.log(appNaam);
+        console.log(versienummer);
+        console.log(versiedatum);
+        console.log(autheur);
+        console.log(copyright);
+        console.log(distributeur);
+        console.log(darkmode);
     }
 }
 
