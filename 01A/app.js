@@ -3,7 +3,7 @@ class App
     runApplication()
     {
         console.log("hello world!");
-        //code gaat hier
+        //code gaat hier.
     }
 }
 
