@@ -13,15 +13,15 @@ class App
         this.distributeur = "Google";
         this.darkmode = "false";
 
-        let nummer = "10"
+        let nummer = 10
         console.log(nummer)
         let naam = "Rawr"
         console.log(naam)
-        let bool="false"
+        let bool=false
         console.log(bool)
 
-        this.eenBool="true"
-        this.nummer="2"
+        this.eenBool=true
+        this.nummer=2
         this.naam="Kat" 
         
     }
