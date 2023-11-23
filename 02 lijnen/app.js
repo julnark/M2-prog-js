@@ -5,17 +5,18 @@ class App
         console.log("hello world!");
         let canvas=document.getElementById("canvasId");
         let g = canvas.getContext("2d");
-        g.fillStyle = "#FFC0CB";
-        g.fillRect(0,0,canvas.width,canvas.height);
-        g.fillStyle= "#00CED1";
-        g.fillRect(50,10,10,10);
         console.log(canvas)
+        g.beginPath()
+        g.fillStyle = "hotpink";
+        g.moveTo(20,20);
+        g.lineTo(300,300);
+        g.lineTo(580,20);
+        g.closePath();
+        g.stroke();
+        g.fill()
     }
 }
 
 let app = new App();
 app.runApplication();
-
-
-
 
