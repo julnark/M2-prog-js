@@ -1,3 +1,4 @@
+/*
 function Wiskunde(u,h,l){
     let logY = Math.log(l) + h + Math.pow(u,2);
     return logY;
@@ -49,15 +50,24 @@ function superMooieGlobalFunction(){
 superMooieGlobalFunction();
 superMooieGlobalFunction();
 superMooieGlobalFunction();
-
+*/
 class App
 {
     runApplication()
     {
         console.log("hello world!");
     }
+    newClassFunction(){
+        console.log("hello world in de nieuwClassFunction");
+    }
+    anotherFunctionWithArguments(aArgument){
+        console.log("Kom maar met je argument");
+        console.log("hier:");
+        console.log(aArgument);
+    }
 }
 
 let app = new App();
 app.runApplication();
-
+app.newClassFunction();
+app.anotherFunctionWithArguments("Mijn argument is appel");
