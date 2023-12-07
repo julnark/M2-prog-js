@@ -51,6 +51,7 @@ superMooieGlobalFunction();
 superMooieGlobalFunction();
 superMooieGlobalFunction();
 */
+
 class App
 {
     runApplication()
@@ -65,9 +66,39 @@ class App
         console.log("hier:");
         console.log(aArgument);
     }
+    kart()
+    {
+        console.log("MARIO!!");
+    }
+    haha()
+    {
+        let antwoord = "BWAHAHA!!"
+        return antwoord;
+    }
+    rekenen(a,b)
+    {
+        let c = a+b;
+        return c;
+    }
+    keer(g,h)
+    {
+        let f = g*h;
+        return f;
+    }
+    
 }
 
 let app = new App();
 app.runApplication();
 app.newClassFunction();
 app.anotherFunctionWithArguments("Mijn argument is appel");
+app.kart();
+let hetResultaat = app.haha();
+    console.log(app.haha());
+let c=app.rekenen(5,4);
+console.log(c);
+let f=app.keer(10,8);
+console.log(f)
+
+
+
