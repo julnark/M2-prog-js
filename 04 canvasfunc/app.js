@@ -6,6 +6,7 @@ class App {
         this.tekenHuis(g,400,200);
         this.tekenHuis(g,100,10);
         this.tekenHuis(g,500,600);
+        this.tekenKerstBoom(g,100,300);
 
     }
     tekenHuis(g,x,y) {
@@ -57,6 +58,47 @@ class App {
         g.closePath();
         g.stroke();
         g.fill()
+    }
+    tekenKerstBoom(g, x, y){
+
+
+        g.beginPath()
+        g.fillStyle = "green";
+        g.moveTo(x+40,10+y)
+        g.lineTo(x+20,80+y)
+        g.lineTo(x+60,80+y)
+        g.closePath()
+        g.stroke()
+        g.fill()
+
+        
+        g.beginPath();
+        g.fillStyle = "yellow";
+        g.arc(90,60,10,0,Math.PI*2);
+        g.stroke();
+        g.fill();
+        g.closePath()
+
+        g.beginPath()
+        g.moveTo(x+30,80+y)
+        g.lineTo(x+30,100+y)
+        g.closePath()
+        g.stroke();
+
+        g.beginPath()
+        g.moveTo(x+50,100+y)
+        g.lineTo(x+30,100+y)
+        g.closePath()
+        g.stroke();
+
+        g.beginPath()
+        g.moveTo(x+50,100+y)
+        g.lineTo(x+50,80+y)
+        g.closePath()
+        g.stroke();
+
+
+
     }
 }
 
