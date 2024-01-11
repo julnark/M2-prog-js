@@ -35,6 +35,33 @@ class App {
             var optellen = element + (1)
             console.log(optellen)
         }
+
+        let headersByCssClass = document.getElementsByClassName("bandName");
+        console.log(headersByCssClass);
+        for (let i = 0; i < headersByCssClass.length; i++) {
+            const element = headersByCssClass[i];
+            console.log(element);
+        }
+
+        let mijnH1 = document.getElementById("headerId")
+        console.log(mijnH1.innerText);// geef weer wat de text is van mijnH1
+        for (let i = 0; i < headersByCssClass.length; i++) {
+            const element = headersByCssClass[i];
+            console.log(element.innerText);
+        }
+
+        mijnH1.innerText = "Nieuwe text";// stop een nieuwe text in de html
+        for (let i = 0; i < headersByCssClass.length; i++) {
+            const element = headersByCssClass[i];
+            console.log(element.innerText)
+        }
+
+        headersByCssClass[0].innerText = "nieuws ";
+        headersByCssClass[1].innerText = "reviews";
+        headersByCssClass[2].innerText = "commentaar ";
+        headersByCssClass[3].innerText = "beste forum posts ";
+        headersByCssClass[4].innerText = "pricewatch";
+        
     }
 }
 
