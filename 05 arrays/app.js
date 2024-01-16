@@ -54,6 +54,7 @@ class App {
         for (let i = 0; i < headersByCssClass.length; i++) {
             const element = headersByCssClass[i];
             console.log(element.innerText)
+            element.innerText = "eten"
         }
 
         headersByCssClass[0].innerText = "nieuws ";
@@ -61,7 +62,14 @@ class App {
         headersByCssClass[2].innerText = "commentaar ";
         headersByCssClass[3].innerText = "beste forum posts ";
         headersByCssClass[4].innerText = "pricewatch";
-        
+
+        let data = ["nieuws", "reviews", "commentaar", "beste forum posts", "pricewatch"];
+        console.log(data);
+        for (let i = 0; i < headersByCssClass.length; i++) {
+            const element = headersByCssClass[i];
+            element.innerText = i + ": " + data[i]
+            console.log(element.innerText);
+        }
     }
 }
 
