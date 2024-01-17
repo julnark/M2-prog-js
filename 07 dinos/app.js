@@ -17,7 +17,7 @@ class App {
         let gras = new Plant("gras", true);
         let struik = new Plant("struik", true);
         console.log(gras);
-        console.log(struik);
+        console.log(struik)
     }
 }
 
