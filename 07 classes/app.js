@@ -8,19 +8,23 @@ class App
 
 class Greet{
     constructor()
-    {}
+    {
+        this.greeting = "Greetings!!";
+    }
 
     showGreeting(){
-        console.log("Greetings!!!!");
+        console.log("greeting van binnen: " +this.greeting);
     }
 }
 
 class GoodBye{
     constructor()
-    {}
+    {
+        this.bye = "ByeBye!!";
+    }
 
     showBye(){
-        console.log("ByeBye!!!!");
+        console.log("ByeBye van binnen: " +this.bye);
     }
 }
 
@@ -38,3 +42,6 @@ bye.showBye();
 
 greet.showGreeting();
 bye.showBye();
+
+console.log("greeting van buiten:" +greet.greeting);
+console.log("ByeBye van buiten:" +bye.bye);
