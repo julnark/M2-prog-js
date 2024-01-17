@@ -7,21 +7,34 @@ class App
 }
 
 class Greet{
-    constructor(){
+    constructor()
+    {}
+
+    showGreeting(){
         console.log("Greetings!!!!");
     }
 }
 
 class GoodBye{
-    constructor(){
+    constructor()
+    {}
+
+    showBye(){
         console.log("ByeBye!!!!");
     }
 }
 
 let app = new App();
 app.runApplication();
+
 let greet = new Greet();
-new Greet();
-new Greet();
-new Greet();
 let bye = new GoodBye();
+
+greet.showGreeting();
+bye.showBye();
+
+greet.showGreeting();
+bye.showBye();
+
+greet.showGreeting();
+bye.showBye();
