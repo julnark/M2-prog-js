@@ -13,6 +13,11 @@ class App {
 
         dino.eatFood(planterEter)
         console.log("leeft " +planterEter.naam+ "?? " +planterEter.leeft);
+
+        let gras = new Plant("gras", true);
+        let struik = new Plant("struik", true);
+        console.log(gras);
+        console.log(struik);
     }
 }
 
@@ -29,6 +34,14 @@ class Dino {
         this.honger=false;
         console.log("ik ben een " + this.naam);
         console.log("mijn honger: " +this.honger);
+        console.log("ik eet nu " +foodToEat.naam);
+    }
+}
+
+class Plant{
+    constructor(naam, leeft){
+        this.naam = naam;
+        this.leeft = leeft;
     }
 }
 
