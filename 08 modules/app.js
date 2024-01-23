@@ -15,5 +15,5 @@ console.log(dino.naam);
 
 import {Plant} from "./plant.mjs"
 let plant = new Plant("ModuloBloem")
-console.log(plant.naam)
+console.log(plant.naam);
 
