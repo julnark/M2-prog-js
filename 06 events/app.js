@@ -30,16 +30,16 @@ class App
         })
 
         tekst.addEventListener("click", (e)=>{
-            const colour = document.body.style.backgroundColor;
+            const colour = tekst.style.backgroundColor;
             if (colour == 'red'){
-                document.body.style.backgroundColor= "white"
+                tekst.style.backgroundColor= "white"
             }
             else {
                 const grote = document.createElement("h1")
                 const tekstGrote = document.createTextNode("U Clicked a div")
                 grote.appendChild(tekstGrote);
                 document.body.appendChild(grote);
-                document.body.style.backgroundColor= "red"
+                tekst.style.backgroundColor= "red"
             }
         })
     }
