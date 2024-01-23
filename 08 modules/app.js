@@ -17,3 +17,10 @@ import {Plant} from "./plant.mjs"
 let plant = new Plant("ModuloBloem")
 console.log(plant.naam);
 
+import { MaakDino, MaakPlant } from "./fabriek.mjs";
+let maakDino = MaakDino();
+let maakPlant = MaakPlant();
+console.log(maakDino.naam);
+console.log(maakPlant.naam);
+
+
